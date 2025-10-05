@@ -73,7 +73,6 @@ def make_sequences(df, feature_cols, target_col, window_size=20, lookahead=21):
         y.append(target[i + window_size - 1])
     return np.array(X), np.array(y)
 
-
 feature_cols = ["Return", "20SMA", "50SMA", "Volume"]
 target_col = "Target"
 window_size = 20
@@ -177,7 +176,7 @@ def main():
     parser.add_argument('--predict-only', action='store_true', help='Load saved model and predict for --ticker without training')
     parser.add_argument('--ticker', type=str, help='Ticker to predict when --predict-only is used')
     args = parser.parse_args()
-
+    #load data
     if args.predict_only:
         if not args.ticker:
             print('When using --predict-only you must provide --ticker TICKER', file=sys.stderr)

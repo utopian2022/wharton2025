@@ -1,1 +1,3 @@
-This is our github for getting to semis in Wharton Investment Competition
+This is our github for our deep learning strategy for the Wharton Investment Competition
+We plan to write a deep learning algorithm and fit it with data from Yahoo Finance.
+Our strategy is to use the client information and fundamentals to find stocks suitable for the client and the feed it to the algorithm, which will then give ratings based on several different technical analysis tools that will help make our investment decisions.
